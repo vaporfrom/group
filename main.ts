@@ -5,10 +5,10 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onGesture(Gesture.LogoUp, function () {
-    X = 1
+    X = 2
 })
 input.onGesture(Gesture.TiltLeft, function () {
-    X = 3
+    X = 4
 })
 input.onButtonPressed(Button.B, function () {
     X += -1
@@ -17,17 +17,14 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 input.onGesture(Gesture.TiltRight, function () {
-    X = 4
+    X = 3
 })
 input.onGesture(Gesture.LogoDown, function () {
-    X = 2
+    X = 1
 })
 let X = 0
 X = 0
 basic.forever(function () {
-    basic.clearScreen()
-    basic.showNumber(X)
-    basic.clearScreen()
     if (X == 1) {
         basic.showLeds(`
             . . # . .
